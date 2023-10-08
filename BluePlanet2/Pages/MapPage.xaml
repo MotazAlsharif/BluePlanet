@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BluePlanet2.Pages.MapPage"
+             Title="MapPage">
+
+    <Grid BackgroundColor="#1c72e3">
+        <!-- Map WebView -->
+        <WebView x:Name="mapWebView"
+                 Source="https://embed.windy.com"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 HeightRequest="400"
+                 >
+        </WebView>
+
+        <!-- Temperature Display Frame -->
+        <Frame x:Name="temperatureFrame"
+     
+       Grid.Row="1"
+       Grid.Column="0"
+       HeightRequest="146"
+       WidthRequest="179"
+       HorizontalOptions="Start"
+       VerticalOptions="Start"
+       IsVisible="false"
+       CornerRadius="5"
+       HasShadow="False">
+            <!-- Set HasShadow to False -->
+            <Label x:Name="temperatureLabel"
+           Text="Temperature: "
+           TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
+        </Frame>
+        <Frame x:Name="warningsFrame"
+  
+       Grid.Row="1"
+       HeightRequest="146"
+       WidthRequest="179"
+       HorizontalOptions="End"
+       VerticalOptions="Start"
+       IsVisible="true"
+       CornerRadius="5"
+               >
+            <Label x:Name="warningsLabel"
+           Text="Weather Warnings: "
+           TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
+        </Frame>
+        <Frame x:Name="swimFrame"
+       BackgroundColor="Green"
+            CornerRadius="5"
+           WidthRequest="350"
+           HeightRequest="140"
+           HorizontalOptions="Center"
+           VerticalOptions="End">
+            <Label Text="Is it good to swim? Yes"
+           TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
+        </Frame>
+    </Grid>
+</ContentPage>

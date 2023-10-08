@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BluePlanet2.view.giantmantaray"
+             Title=""
+             BackgroundColor="#04174A">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Large Wallpaper -->
+        <WebView Source="https://www.youtube.com/embed/FQe8KnYqQ1w?si=DhjbeI33JunzbQ9Gauto" HeightRequest="300" WidthRequest="400" />
+        <!-- Left Arrow Button -->
+
+
+        <!-- Text Content -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="15" Spacing="20">
+                <Label Text="Giant manta ray (Manta birostris)" TextColor="#FFFFFF" FontSize="25" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Weight : 1300KG" TextColor="White" CharacterSpacing="1" />
+                <Label Text="Length : 6.7 M" TextColor="White" CharacterSpacing="1"/>
+                <Label Text="LifeSpan : 20-30 years" TextColor="White" CharacterSpacing="1"/>
+                <Label Text="Region : Red Sea" TextColor="White" CharacterSpacing="1"/>
+                <Label Text="Threats : Overfishing and entanglement in fishing gear. " TextColor="White" CharacterSpacing="1"/>
+                <Label Text="About : The largest manta ray species, with a wingspan of up to 6 meters. " TextColor="White" CharacterSpacing="1"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
